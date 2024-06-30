@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "NeptuneEvo": {
+      "commandName": "Executable",
+      "executablePath": "$(MSBuildProjectDirectory)/../../../ragemp-server.exe",
+      "workingDirectory": "$(MSBuildProjectDirectory)../../../../",
+      "environmentVariables": {
+        "Ключ": "Значение"
+      },
+      "sqlDebugging": false,
+      "nativeDebugging": false
+    }
+  }
+}
