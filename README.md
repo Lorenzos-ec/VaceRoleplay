@@ -5,3 +5,15 @@
  - nvm use 16.14.0
  - npm install --legacy-peer-deps
  - npm run build
+
+## Install src_client
+ - npm install
+ - npm run build
+
+## Database
+ - Create 3 databases
+   -  ra3_main
+   - ra3_mainconfig
+   - ra3_mainlogs
+ - Now Upload the files from the Database Folder to the databases
+
