@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "UhM5Y9ELsh0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jerem\\.nuget\\packages\\mysqlconnector\\1.1.0\\mysqlconnector.1.1.0.nupkg.sha512",
+    "C:\\Users\\Jerem\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Jerem\\.nuget\\packages\\system.data.sqlite.core\\1.0.110\\system.data.sqlite.core.1.0.110.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Newtonsoft.Json' 12.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

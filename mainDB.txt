@@ -1,0 +1,3104 @@
+﻿[6/30/2024 2:46:47 PM] 1-----------------1
+BeforeExecute
+-- MainDB MySql.Official MySql
+DECLARE @Now DateTime
+SET     @Now = '2024-06-30 14:46:47.826'
+
+DELETE `b`
+FROM
+	`banned` `b`
+WHERE
+	@Now > `b`.`until`
+
+[6/30/2024 2:46:47 PM] 2-----------------2
+
+[6/30/2024 2:46:47 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0050687. Records Affected: 0.
+
+[6/30/2024 2:46:47 PM] 2-----------------2
+
+[6/30/2024 2:46:47 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0088987. Rows Count: 0.
+
+[6/30/2024 2:46:47 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+BeforeExecute
+-- MainDB MySql.Official MySql
+
+SELECT
+	`vt`.`autoId`,
+	`vt`.`vehAutoId`,
+	`vt`.`vehNumber`,
+	`vt`.`model`,
+	`vt`.`holderAutoId`,
+	`vt`.`holderName`,
+	`vt`.`policAutoId`,
+	`vt`.`policName`,
+	`vt`.`text`,
+	`vt`.`link`,
+	`vt`.`time`,
+	`vt`.`price`,
+	`vt`.`isEvac`,
+	`vt`.`toggled`,
+	`vt`.`type`
+FROM
+	`vehicleticket` `vt`
+WHERE
+	`vt`.`toggled` = 0
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014550
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0034132. Rows Count: 0.
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+BeforeExecute
+-- MainDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`objectId`,
+	`t1`.`type`,
+	`t1`.`attackingId`,
+	`t1`.`protectingId`,
+	`t1`.`mapName`,
+	`t1`.`mapId`,
+	`t1`.`position`,
+	`t1`.`range`,
+	`t1`.`gripType`,
+	`t1`.`composition`,
+	`t1`.`weaponsCategory`,
+	`t1`.`time`
+FROM
+	`wars` `t1`
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015901
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0032540. Rows Count: 0.
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+BeforeExecute
+-- MainDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`orgid`
+FROM
+	`familyzones` `t1`
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0018495
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0057177. Rows Count: 0.
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`index`,
+	`t1`.`price`,
+	`t1`.`itemId`
+FROM
+	`ores` `t1`
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0053150
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0087046. Rows Count: 5.
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+BeforeExecute
+-- MainDB MySql.Official MySql
+
+SELECT
+	`t1`.`command`,
+	`t1`.`isadmin`,
+	`t1`.`minrank`
+FROM
+	`adminaccess` `t1`
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014315
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0109821. Rows Count: 184.
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`ed`.`autoId`,
+	`ed`.`day`,
+	`ed`.`type`,
+	`ed`.`desc`,
+	`ed`.`count`,
+	`ed`.`itemId`,
+	`ed`.`data`,
+	`ed`.`pngUrl`,
+	`ed`.`active`
+FROM
+	`everydayaward` `ed`
+WHERE
+	`ed`.`active` = 1
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014158
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0061737. Rows Count: 13.
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_hair` `t1`
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013927
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0059823. Rows Count: 123.
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_hair` `t1`
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013866
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0053357. Rows Count: 117.
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_beard` `t1`
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0012315
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0042837. Rows Count: 41.
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_beard` `t1`
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0012776
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0060723. Rows Count: 29.
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_body` `t1`
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:48 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013848
+
+[6/30/2024 2:46:48 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0047793. Rows Count: 41.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_body` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015309
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0045241. Rows Count: 17.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_eyebrows` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014087
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0059845. Rows Count: 33.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_eyebrows` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0012848
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0047457. Rows Count: 33.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_eyes` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014226
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0057219. Rows Count: 32.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_eyes` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015985
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0050172. Rows Count: 32.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_lips` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0018174
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0053299. Rows Count: 11.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_lips` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013385
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0044075. Rows Count: 11.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_makeup` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013268
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0057151. Rows Count: 74.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_makeup` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014847
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0051843. Rows Count: 74.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_palette` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013308
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0046114. Rows Count: 32.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_palette` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0024081
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0071689. Rows Count: 32.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`Name`,
+	`t1`.`Dictionary`,
+	`t1`.`MaleHash`,
+	`t1`.`FemaleHash`,
+	`t1`.`Slots`,
+	`t1`.`Price`,
+	`t1`.`Donate`
+FROM
+	`tattoo_head` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013059
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0065829. Rows Count: 53.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`Name`,
+	`t1`.`Dictionary`,
+	`t1`.`MaleHash`,
+	`t1`.`FemaleHash`,
+	`t1`.`Slots`,
+	`t1`.`Price`,
+	`t1`.`Donate`
+FROM
+	`tattoo_torso` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013298
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0077292. Rows Count: 282.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`Name`,
+	`t1`.`Dictionary`,
+	`t1`.`MaleHash`,
+	`t1`.`FemaleHash`,
+	`t1`.`Slots`,
+	`t1`.`Price`,
+	`t1`.`Donate`
+FROM
+	`tattoo_leftarm` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014077
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0051194. Rows Count: 80.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`Name`,
+	`t1`.`Dictionary`,
+	`t1`.`MaleHash`,
+	`t1`.`FemaleHash`,
+	`t1`.`Slots`,
+	`t1`.`Price`,
+	`t1`.`Donate`
+FROM
+	`tattoo_rightarm` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0023241
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0123601. Rows Count: 75.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`Name`,
+	`t1`.`Dictionary`,
+	`t1`.`MaleHash`,
+	`t1`.`FemaleHash`,
+	`t1`.`Slots`,
+	`t1`.`Price`,
+	`t1`.`Donate`
+FROM
+	`tattoo_leftleg` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0012705
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0053099. Rows Count: 41.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`Name`,
+	`t1`.`Dictionary`,
+	`t1`.`MaleHash`,
+	`t1`.`FemaleHash`,
+	`t1`.`Slots`,
+	`t1`.`Price`,
+	`t1`.`Donate`
+FROM
+	`tattoo_rightleg` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015075
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0051124. Rows Count: 35.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`price`,
+	`t1`.`donate`,
+	`t1`.`maxSlots`
+FROM
+	`clothes_bugs` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0019235
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0063332. Rows Count: 33.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`isHair`,
+	`t1`.`isHat`,
+	`t1`.`isGlasses`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`,
+	`t1`.`gender`
+FROM
+	`clothes_female_masks` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0030787
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0111657. Rows Count: 248.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`isHair`,
+	`t1`.`isHat`,
+	`t1`.`isGlasses`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`,
+	`t1`.`gender`
+FROM
+	`clothes_male_masks` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014693
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0098371. Rows Count: 247.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`clean_hair`,
+	`t1`.`similar`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_hats` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016335
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0071373. Rows Count: 180.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`clean_hair`,
+	`t1`.`similar`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_hats` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014630
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0072822. Rows Count: 201.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_accessories` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0018668
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0125229. Rows Count: 145.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_accessories` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0031331
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0086624. Rows Count: 219.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_ears` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016517
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0051119. Rows Count: 22.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_ears` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0018157
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0058956. Rows Count: 41.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_glasses` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0017988
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0055727. Rows Count: 44.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_glasses` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014352
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0048927. Rows Count: 44.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`underwear`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_legs` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016344
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0075031. Rows Count: 197.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`underwear`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_legs` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015011
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0063874. Rows Count: 184.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_shoes` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015625
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0059183. Rows Count: 122.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_shoes` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014617
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0067221. Rows Count: 119.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`torso`,
+	`t1`.`textures`,
+	`t1`.`similar`,
+	`t1`.`type`,
+	`t1`.`undershirt`,
+	`t1`.`undershirt_buttoned`,
+	`t1`.`undershirt_torso`,
+	`t1`.`undershirt_buttoned_torso`,
+	`t1`.`isClearLegs`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_tops` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015047
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0181108. Rows Count: 545.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`torso`,
+	`t1`.`textures`,
+	`t1`.`similar`,
+	`t1`.`type`,
+	`t1`.`undershirt`,
+	`t1`.`undershirt_buttoned`,
+	`t1`.`undershirt_torso`,
+	`t1`.`undershirt_buttoned_torso`,
+	`t1`.`isClearLegs`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_tops` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0023450
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0229263. Rows Count: 530.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_watches` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013095
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0046969. Rows Count: 31.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_watches` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015133
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0051221. Rows Count: 42.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_bracelets` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016032
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0170894. Rows Count: 17.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_bracelets` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0011139
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0037922. Rows Count: 10.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`price`,
+	`t1`.`donate`,
+	`t1`.`torso`
+FROM
+	`clothes_female_torsos` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0012573
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0042409. Rows Count: 12.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`price`,
+	`t1`.`donate`,
+	`t1`.`torso`
+FROM
+	`clothes_male_torsos` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0012073
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0041193. Rows Count: 14.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_bodyarmors` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0012515
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0050051. Rows Count: 28.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_bodyarmors` `t1`
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015118
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:49 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0043062. Rows Count: 27.
+
+[6/30/2024 2:46:49 PM] 2-----------------2
+
+[6/30/2024 2:46:50 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_decals` `t1`
+
+[6/30/2024 2:46:50 PM] 2-----------------2
+
+[6/30/2024 2:46:50 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016751
+
+[6/30/2024 2:46:50 PM] 2-----------------2
+
+[6/30/2024 2:46:50 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0051629. Rows Count: 63.
+
+[6/30/2024 2:46:50 PM] 2-----------------2
+
+[6/30/2024 2:46:50 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_decals` `t1`
+
+[6/30/2024 2:46:50 PM] 2-----------------2
+
+[6/30/2024 2:46:50 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0012266
+
+[6/30/2024 2:46:50 PM] 2-----------------2
+
+[6/30/2024 2:46:50 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0048340. Rows Count: 64.
+
+[6/30/2024 2:46:50 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+BeforeExecute
+-- MainDB MySql.Official MySql
+DECLARE @Now DateTime
+SET     @Now = '2024-06-30 15:08:28.245'
+
+DELETE `b`
+FROM
+	`banned` `b`
+WHERE
+	@Now > `b`.`until`
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0042313. Records Affected: 0.
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0075386. Rows Count: 0.
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+BeforeExecute
+-- MainDB MySql.Official MySql
+
+SELECT
+	`vt`.`autoId`,
+	`vt`.`vehAutoId`,
+	`vt`.`vehNumber`,
+	`vt`.`model`,
+	`vt`.`holderAutoId`,
+	`vt`.`holderName`,
+	`vt`.`policAutoId`,
+	`vt`.`policName`,
+	`vt`.`text`,
+	`vt`.`link`,
+	`vt`.`time`,
+	`vt`.`price`,
+	`vt`.`isEvac`,
+	`vt`.`toggled`,
+	`vt`.`type`
+FROM
+	`vehicleticket` `vt`
+WHERE
+	`vt`.`toggled` = 0
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013504
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0032767. Rows Count: 0.
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+BeforeExecute
+-- MainDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`objectId`,
+	`t1`.`type`,
+	`t1`.`attackingId`,
+	`t1`.`protectingId`,
+	`t1`.`mapName`,
+	`t1`.`mapId`,
+	`t1`.`position`,
+	`t1`.`range`,
+	`t1`.`gripType`,
+	`t1`.`composition`,
+	`t1`.`weaponsCategory`,
+	`t1`.`time`
+FROM
+	`wars` `t1`
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014908
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0028697. Rows Count: 0.
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+BeforeExecute
+-- MainDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`orgid`
+FROM
+	`familyzones` `t1`
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013085
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0028236. Rows Count: 0.
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`index`,
+	`t1`.`price`,
+	`t1`.`itemId`
+FROM
+	`ores` `t1`
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0012281
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0128734. Rows Count: 5.
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+BeforeExecute
+-- MainDB MySql.Official MySql
+
+SELECT
+	`t1`.`command`,
+	`t1`.`isadmin`,
+	`t1`.`minrank`
+FROM
+	`adminaccess` `t1`
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016597
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0112534. Rows Count: 184.
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`ed`.`autoId`,
+	`ed`.`day`,
+	`ed`.`type`,
+	`ed`.`desc`,
+	`ed`.`count`,
+	`ed`.`itemId`,
+	`ed`.`data`,
+	`ed`.`pngUrl`,
+	`ed`.`active`
+FROM
+	`everydayaward` `ed`
+WHERE
+	`ed`.`active` = 1
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0020308
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:28 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0062523. Rows Count: 13.
+
+[6/30/2024 3:08:28 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_hair` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015390
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0060820. Rows Count: 123.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_hair` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015811
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0052642. Rows Count: 117.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_beard` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015330
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0052887. Rows Count: 41.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_beard` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0022240
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0066108. Rows Count: 29.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_body` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016571
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0052617. Rows Count: 41.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_body` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015923
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0054537. Rows Count: 17.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_eyebrows` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013030
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0044225. Rows Count: 33.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_eyebrows` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013802
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0045006. Rows Count: 33.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_eyes` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013970
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0049543. Rows Count: 32.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_eyes` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016506
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0055673. Rows Count: 32.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_lips` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015945
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0052133. Rows Count: 11.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_lips` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016332
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0048057. Rows Count: 11.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_makeup` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0018357
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0055297. Rows Count: 74.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_makeup` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015905
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0050954. Rows Count: 74.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_female_palette` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014230
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0048482. Rows Count: 32.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`tname`,
+	`t1`.`name`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`barber_male_palette` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0013651
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0045583. Rows Count: 32.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`Name`,
+	`t1`.`Dictionary`,
+	`t1`.`MaleHash`,
+	`t1`.`FemaleHash`,
+	`t1`.`Slots`,
+	`t1`.`Price`,
+	`t1`.`Donate`
+FROM
+	`tattoo_head` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016258
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0070691. Rows Count: 53.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`Name`,
+	`t1`.`Dictionary`,
+	`t1`.`MaleHash`,
+	`t1`.`FemaleHash`,
+	`t1`.`Slots`,
+	`t1`.`Price`,
+	`t1`.`Donate`
+FROM
+	`tattoo_torso` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016568
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0070769. Rows Count: 282.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`Name`,
+	`t1`.`Dictionary`,
+	`t1`.`MaleHash`,
+	`t1`.`FemaleHash`,
+	`t1`.`Slots`,
+	`t1`.`Price`,
+	`t1`.`Donate`
+FROM
+	`tattoo_leftarm` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016209
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0053297. Rows Count: 80.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`Name`,
+	`t1`.`Dictionary`,
+	`t1`.`MaleHash`,
+	`t1`.`FemaleHash`,
+	`t1`.`Slots`,
+	`t1`.`Price`,
+	`t1`.`Donate`
+FROM
+	`tattoo_rightarm` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0017467
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0055710. Rows Count: 75.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`Name`,
+	`t1`.`Dictionary`,
+	`t1`.`MaleHash`,
+	`t1`.`FemaleHash`,
+	`t1`.`Slots`,
+	`t1`.`Price`,
+	`t1`.`Donate`
+FROM
+	`tattoo_leftleg` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014669
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0050014. Rows Count: 41.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`Name`,
+	`t1`.`Dictionary`,
+	`t1`.`MaleHash`,
+	`t1`.`FemaleHash`,
+	`t1`.`Slots`,
+	`t1`.`Price`,
+	`t1`.`Donate`
+FROM
+	`tattoo_rightleg` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0018234
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0059731. Rows Count: 35.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`price`,
+	`t1`.`donate`,
+	`t1`.`maxSlots`
+FROM
+	`clothes_bugs` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0012997
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0052489. Rows Count: 33.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`isHair`,
+	`t1`.`isHat`,
+	`t1`.`isGlasses`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`,
+	`t1`.`gender`
+FROM
+	`clothes_female_masks` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016821
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0086920. Rows Count: 248.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`isHair`,
+	`t1`.`isHat`,
+	`t1`.`isGlasses`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`,
+	`t1`.`gender`
+FROM
+	`clothes_male_masks` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0022432
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0092947. Rows Count: 247.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`clean_hair`,
+	`t1`.`similar`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_hats` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0020065
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0074861. Rows Count: 180.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`clean_hair`,
+	`t1`.`similar`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_hats` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0022746
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0084587. Rows Count: 201.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_accessories` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0018022
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0059777. Rows Count: 145.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_accessories` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016221
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0069816. Rows Count: 219.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_ears` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0017338
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0049696. Rows Count: 22.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_ears` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015671
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0052893. Rows Count: 41.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_glasses` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0025771
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0114130. Rows Count: 44.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_glasses` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0020576
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0072885. Rows Count: 44.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`underwear`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_legs` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0017976
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0084774. Rows Count: 197.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`underwear`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_legs` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0018537
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0075707. Rows Count: 184.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_shoes` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015373
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0056357. Rows Count: 122.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_shoes` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0025013
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0072584. Rows Count: 119.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`torso`,
+	`t1`.`textures`,
+	`t1`.`similar`,
+	`t1`.`type`,
+	`t1`.`undershirt`,
+	`t1`.`undershirt_buttoned`,
+	`t1`.`undershirt_torso`,
+	`t1`.`undershirt_buttoned_torso`,
+	`t1`.`isClearLegs`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_tops` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0023461
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0151437. Rows Count: 545.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`torso`,
+	`t1`.`textures`,
+	`t1`.`similar`,
+	`t1`.`type`,
+	`t1`.`undershirt`,
+	`t1`.`undershirt_buttoned`,
+	`t1`.`undershirt_torso`,
+	`t1`.`undershirt_buttoned_torso`,
+	`t1`.`isClearLegs`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_tops` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0018562
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0116391. Rows Count: 530.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_watches` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0018544
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0052077. Rows Count: 31.
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_watches` `t1`
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:29 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0017505
+
+[6/30/2024 3:08:29 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0052403. Rows Count: 42.
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_bracelets` `t1`
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016078
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0049220. Rows Count: 17.
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_bracelets` `t1`
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0015593
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0050959. Rows Count: 10.
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`price`,
+	`t1`.`donate`,
+	`t1`.`torso`
+FROM
+	`clothes_female_torsos` `t1`
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016212
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0051222. Rows Count: 12.
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`price`,
+	`t1`.`donate`,
+	`t1`.`torso`
+FROM
+	`clothes_male_torsos` `t1`
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0014825
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0053932. Rows Count: 14.
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_bodyarmors` `t1`
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0018346
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0061900. Rows Count: 28.
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_bodyarmors` `t1`
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0018202
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0106324. Rows Count: 27.
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_female_decals` `t1`
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0016570
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0051670. Rows Count: 63.
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+BeforeExecute
+-- ConfigDB MySql.Official MySql
+
+SELECT
+	`t1`.`id`,
+	`t1`.`variation`,
+	`t1`.`cvariation`,
+	`t1`.`textures`,
+	`t1`.`category`,
+	`t1`.`price`,
+	`t1`.`donate`
+FROM
+	`clothes_male_decals` `t1`
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Query Execution Time (AfterExecute): 00:00:00.0022141
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+
+[6/30/2024 3:08:30 PM] 1-----------------1
+Total Execution Time (Completed): 00:00:00.0057565. Rows Count: 64.
+
+[6/30/2024 3:08:30 PM] 2-----------------2
+

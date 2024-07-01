@@ -1,0 +1,257 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\NeptuneEvo\\NeptuneEvo.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\Localization\\Localization.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\Localization\\Localization.csproj",
+        "projectName": "Localization",
+        "projectPath": "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\Localization\\Localization.csproj",
+        "packagesPath": "C:\\Users\\Jerem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\Localization\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj",
+        "projectName": "NeptuneEvoSDK",
+        "projectPath": "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj",
+        "packagesPath": "C:\\Users\\Jerem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\NeptuneEvoSDK\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.110, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\NeptuneEvo\\NeptuneEvo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\NeptuneEvo\\NeptuneEvo.csproj",
+        "projectName": "NeptuneEvo",
+        "projectPath": "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\NeptuneEvo\\NeptuneEvo.csproj",
+        "packagesPath": "C:\\Users\\Jerem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\NeptuneEvo\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\Localization\\Localization.csproj": {
+                "projectPath": "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\Localization\\Localization.csproj"
+              },
+              "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj": {
+                "projectPath": "C:\\Users\\Jerem\\Desktop\\redage_v3-main\\redage_v3-main\\dotnet\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.28, )"
+            },
+            "MySqlBackup.NET": {
+              "target": "Package",
+              "version": "[2.3.4, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Otp.NET": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.2.79, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.113.7, )"
+            },
+            "linq2db.MySql": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

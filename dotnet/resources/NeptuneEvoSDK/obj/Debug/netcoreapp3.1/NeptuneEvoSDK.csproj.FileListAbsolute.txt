@@ -1,0 +1,13 @@
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.deps.json
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\obj\Debug\netcoreapp3.1\NeptuneEvoSDK.csproj.AssemblyReference.cache
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\obj\Debug\netcoreapp3.1\NeptuneEvoSDK.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\obj\Debug\netcoreapp3.1\NeptuneEvoSDK.AssemblyInfoInputs.cache
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\obj\Debug\netcoreapp3.1\NeptuneEvoSDK.AssemblyInfo.cs
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\obj\Debug\netcoreapp3.1\NeptuneEvoSDK.csproj.CoreCompileInputs.cache
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\obj\Debug\netcoreapp3.1\NeptuneEvoSDK.sourcelink.json
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\obj\Debug\netcoreapp3.1\NeptuneE.F4019A40.Up2Date
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\obj\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\NeptuneEvoSDK\obj\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb

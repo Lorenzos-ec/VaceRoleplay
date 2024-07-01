@@ -1,0 +1,10 @@
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\Localization\bin\Debug\netcoreapp3.1\Localization.deps.json
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\Localization\bin\Debug\netcoreapp3.1\Localization.dll
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\Localization\bin\Debug\netcoreapp3.1\Localization.pdb
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\Localization\obj\Debug\netcoreapp3.1\Localization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\Localization\obj\Debug\netcoreapp3.1\Localization.AssemblyInfoInputs.cache
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\Localization\obj\Debug\netcoreapp3.1\Localization.AssemblyInfo.cs
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\Localization\obj\Debug\netcoreapp3.1\Localization.csproj.CoreCompileInputs.cache
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\Localization\obj\Debug\netcoreapp3.1\Localization.sourcelink.json
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\Localization\obj\Debug\netcoreapp3.1\Localization.dll
+C:\Users\Jerem\Desktop\redage_v3-main\redage_v3-main\dotnet\resources\Localization\obj\Debug\netcoreapp3.1\Localization.pdb
