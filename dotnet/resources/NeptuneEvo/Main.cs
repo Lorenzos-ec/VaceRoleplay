@@ -56,7 +56,7 @@ namespace NeptuneEvo
 {
     public class Main : Script
     {
-        public static string Codename { get; } = "RedAge Classic";
+        public static string Codename { get; } = "VACERP";
         public static string Version { get; } = "v1.00.00";
         public static string Build { get; } = "#0000";
         public static string Full { get; } = $"{Codename} {Version} {Build}";
@@ -857,7 +857,7 @@ namespace NeptuneEvo
                 Timers.Start("envTimer", 1000, () => enviromentChangeTrigger(), true);
                 MoneySystem.Lottery.OnResourceStart();
 
-                var weatherId = 13;//config.TryGet<byte>("Weather", 1);
+                var weatherId = 1;//config.TryGet<byte>("Weather", 1);
                 var dateTime = DateTime.Now;
                 World.Weather.Repository.Init(weatherId, dateTime.Hour, dateTime.Minute);
                 
