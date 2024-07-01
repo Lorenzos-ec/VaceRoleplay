@@ -17,3 +17,6 @@
    - ra3_mainlogs
  - Now Upload the files from the Database Folder to the databases
 
+ ## Full Guide
+  - https://ragemp.pro/resources/gotovyj-mod-servera-redage-rp-3-0-dlja-multipleera-rage-mp-na-baze-redage-neptuneevo.408/
+

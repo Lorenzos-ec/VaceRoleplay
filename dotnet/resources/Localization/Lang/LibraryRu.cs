@@ -619,11 +619,11 @@ namespace Localization
             RuText[DataName.HandshakeYou] = "Игрок ({0}) хочет пожать Вам руку. Y/N - принять/отклонить";
             RuText[DataName.YouHandshake] = "Вы предложили игроку ({0}) пожать руку.";
             RuText[DataName.CantHandshake] = "Невозможно пожать руку игроку в данный момент"; 
-            RuText[DataName.Greetings1] = "Приветствуем тебя на проекте !{{#ff3333}}RedAge!{{#FFF}} и от всего сердца благодарим за то, что ты сейчас с нами ❤️"; //NOT WORKING
-            RuText[DataName.Greetings2] = "Десятки людей уже !{{#ff3333}}четыре года!{{#FFF}} ежедневно стараются для того, чтобы сделать твой день чуточку ярче.";//NOT WORKING
-            RuText[DataName.Greetings3] = "Не забывай проходить Боевой пропуск и получать крутые призы!";//NOT WORKING
-            RuText[DataName.Greetings4] = "Для связи с администрацией используй !{{#ff3333}}/report!{{#FFF}}. Открыть FAQ по серверу: !{{#ff3333}}F10!{{#FFF}}. Замьютить токсика - !{{#ff3333}}/pmute!{{#FFF}}.";//NOT WORKING
-            RuText[DataName.Greetings5] = "Очень много полезной информации о проекте ты сможешь найти на нашей Википедии - !{{#ff3333}}wiki.redage.net!{{#FFF}}.";//NOT WORKING
+            RuText[DataName.Greetings1] = ""; //NOT WORKING
+            RuText[DataName.Greetings2] = "";//NOT WORKING
+            RuText[DataName.Greetings3] = "";//NOT WORKING
+            RuText[DataName.Greetings4] = "";//NOT WORKING
+            RuText[DataName.Greetings5] = "";//NOT WORKING
             RuText[DataName.Parking] = "Парковка";
             RuText[DataName.Theather] = "Амфитеатр";
             RuText[DataName.Yacht] = "Яхта";
