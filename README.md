@@ -10,6 +10,11 @@
  - npm install
  - npm run build
 
+## Build CEF & Client
+ - go in the src_client or src_cef folder
+ - open cmd
+ - type npm run build
+
 ## Database
  - Create 3 databases
    -  ra3_main
